@@ -6,6 +6,7 @@ This repository contains the data generation pipeline for the paper "Curriculum 
 
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
+- [Data](#data)
 
 ## Overview
 
@@ -36,5 +37,28 @@ pip install vllm==0.9.1 --extra-index-url https://download.pytorch.org/whl/cu128
 pip install -U "ray[data,train,tune,serve]"
 pip install git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3
 ```
+
+## Data
+1. The prompts are mentioned in the corresponding .ipynb files and in the folder `./prompts`
+2. The data related to skill graph is present in `./skill_graph_data`
+3. All datasets are listed here:
+    - Context, CQA, CSQA related datasets:
+        * [Stage 0](https://huggingface.co/datasets/Pavankalyan/stage0_c_all)
+        * [Stage 1](https://huggingface.co/datasets/Pavankalyan/stage1_c_all)
+        * [Stage 2](https://huggingface.co/datasets/Pavankalyan/stage2_c_all)
+        * [Stage 3](https://huggingface.co/datasets/Pavankalyan/stage3_c_all)
+        * [Stage 4](https://huggingface.co/datasets/Pavankalyan/stage4_c_all)
+    - Instruct datasets:
+        * [Stage 0](https://huggingface.co/datasets/Pavankalyan/stage0_instruct)
+        * [Stage 1](https://huggingface.co/datasets/Pavankalyan/stage1_instruct)
+        * [Stage 2](https://huggingface.co/datasets/Pavankalyan/stage2_instruct)
+        * [Stage 3](https://huggingface.co/datasets/Pavankalyan/stage3_instruct)
+        * [Stage 4](https://huggingface.co/datasets/Pavankalyan/stage4_instruct)
+    - Data formatted for training
+        * [Stage 0](https://huggingface.co/datasets/Pavankalyan/stage0_train)
+        * [Stage 1](https://huggingface.co/datasets/Pavankalyan/stage1_train)
+        * [Stage 2](https://huggingface.co/datasets/Pavankalyan/stage2_train)
+        * [Stage 3](https://huggingface.co/datasets/Pavankalyan/stage3_train)
+        * [Stage 4](https://huggingface.co/datasets/Pavankalyan/stage4_train)
 
 
