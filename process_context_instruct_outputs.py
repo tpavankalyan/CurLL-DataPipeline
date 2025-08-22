@@ -1,3 +1,21 @@
+"""
+This script is responsible for processing raw outputs from a data generation model,
+specifically for "context" and "instruct" data types within the CurLL data pipeline.
+
+It performs the following key operations:
+1.  **Loads Raw Data**: Reads parquet files from a specified base path, typically
+    containing outputs from an LLM.
+2.  **Parses Answers**: Extracts structured information (instructions, responses,
+    expanded topics, generated text) from the raw text outputs, handling both
+    JSON and regex-based parsing for robustness.
+3.  **Extracts Seeds**: Compares the final prompts with a template to extract
+    seed values that were used to generate the data.
+4.  **Uploads to Hugging Face Hub**: Pushes the processed and enriched dataset
+    to the Hugging Face Hub for further use in training.
+
+This script is a critical step in transforming raw model outputs into a clean,
+structured dataset suitable for curriculum learning.
+"""
 import os
 import pandas as pd
 from tqdm import tqdm
