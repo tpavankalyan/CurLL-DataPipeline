@@ -30,3 +30,11 @@ Here is a breakdown of the files in this repository and their purposes:
 -   **`create_train_val_test.ipynb`**: A Jupyter notebook that takes entire data and splits it into training, validation, and test sets.
 -   **`run_inference.py`**: Use this python script to run inference using Gemma3-27B-IT
 
+By default the script uses `Gemma3-27B-IT`. If the vllm is giving error, then create a seaparate environment specifcally for this file and try the following setup:
+```bash
+pip install vllm==0.9.1 --extra-index-url https://download.pytorch.org/whl/cu128
+pip install -U "ray[data,train,tune,serve]"
+pip install git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3
+```
+
+
