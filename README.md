@@ -29,6 +29,7 @@ Here is a breakdown of the files in this repository and their purposes:
 -   **`process_cqa_csqa_outputs.ipynb`**: A Jupyter notebook for processing outputs of CQA, CSQA generations.
 -   **`format_train.py`**: A Python script that formats the processed data into a consistent format for training. It combines different datasets, applies formatting, and prepares the data for the final stage.
 -   **`create_train_val_test.ipynb`**: A Jupyter notebook that takes entire data and splits it into training, validation, and test sets.
+-   **`results.ipynb`**: This contains code for all analysis and plots presented in the paper
 -   **`run_inference.py`**: Use this python script to run inference using Gemma3-27B-IT
 
 By default the script uses `Gemma3-27B-IT`. If the vllm is giving error, then create a seaparate environment specifcally for this file and try the following setup:
