@@ -61,5 +61,6 @@ pip install git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3
         * [Stage 2](https://huggingface.co/datasets/Pavankalyan/stage2_train)
         * [Stage 3](https://huggingface.co/datasets/Pavankalyan/stage3_train)
         * [Stage 4](https://huggingface.co/datasets/Pavankalyan/stage4_train)
+4. The skill graph can be found here: [SkillGraph](https://huggingface.co/spaces/Pavankalyan/CurrLL-metadata)
 
 
